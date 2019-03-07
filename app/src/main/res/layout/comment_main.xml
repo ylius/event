@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp">
+
+        <TextView
+            android:id="@+id/comment_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="Roboto"
+            android:maxLines="2"
+            android:text="2-Alarm Fire Breaks Out At Page"
+            android:textColor="#2A2C30"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/comment_main_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="Roboto"
+                        android:textColor="#3F89E7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/comment_main_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="Roboto"
+                        android:text="San Francisco, CA"
+                        android:textColor="#939393"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/comment_main_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Roboto"
+                    android:paddingTop="6dp"
+                    android:text="2001 1/ 1"
+                    android:textColor="#939393"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6EA" />
+
+        <TextView
+            android:id="@+id/comment_main_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="Roboto"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="LittleBird is not the real case of using this layout"
+            android:textColor="#77797C"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/comment_main_image"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6EA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <ImageView
+                android:id="@+id/comment_main_like_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like" />
+
+            <TextView
+                android:id="@+id/comment_main_like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <ImageView
+                android:id="@+id/comment_main_comment_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/comments" />
+
+            <TextView
+                android:id="@+id/comment_main_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <ImageView
+                android:id="@+id/comment_main_repost_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/repost" />
+
+            <TextView
+                android:id="@+id/comment_main_repost_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6EA" />
+</LinearLayout>
