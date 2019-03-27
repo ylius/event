@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (dataSnapshot.hasChild(username)) {
-                            Toast.makeText(getBaseContext(), "username is already registered, please change one", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getBaseContext(), "This username is already registered, please choose another one", Toast.LENGTH_LONG).show();
                         } else if (!username.equals("") && !password.equals("")) {
                             // put username as key to set value
                             mDatabase.child("users").child(user.getUsername()).setValue(user);
-                            Toast.makeText(getBaseContext(), "Successfully registered", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getBaseContext(), "Successfully registered", Toast.LENGTH_LONG).show();
                         }
                     }
 
@@ -75,12 +75,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (dataSnapshot.hasChild(username) && (password.equals(dataSnapshot.child(username).child("password").getValue()))) {
-                            Log.i(TAG, "You successfully login");
+                            Log.i(TAG, "You have successfully logged in");
                             Intent myIntent = new Intent(MainActivity.this, EventActivity.class);
                             myIntent.putExtra("Username", username);
                             startActivity(myIntent);
                         } else {
-                            Toast.makeText(getBaseContext(),"Please login again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getBaseContext(),"Invalid username or password", Toast.LENGTH_LONG).show();
                         }
                     }
 
