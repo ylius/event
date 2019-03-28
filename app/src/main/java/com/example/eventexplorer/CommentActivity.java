@@ -107,10 +107,10 @@ public class CommentActivity extends AppCompatActivity {
             @Override
             public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
                 if (databaseError != null) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "The event is failed, please check you network status.", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), "The comment is failed, please check your network status.", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    Toast toast = Toast.makeText(getApplicationContext(), "The event is reported", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), "The comment is posted", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }

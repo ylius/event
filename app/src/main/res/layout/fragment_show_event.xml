@@ -8,6 +8,7 @@
         android:id="@+id/event_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EFEFF0"
-        android:dividerHeight="10.0sp" />
+        android:dividerHeight="10.0sp"
+        android:background="#EFEFF0" />
+
 </FrameLayout>

@@ -9,6 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingLeft="5dp"
             android:text="0"
             android:textSize="16sp" />
 
@@ -97,6 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="0"
+            android:paddingLeft="5dp"
             android:textSize="16sp" />
 
         <ImageView
@@ -110,6 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
+            android:paddingLeft="5dp"
             android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>

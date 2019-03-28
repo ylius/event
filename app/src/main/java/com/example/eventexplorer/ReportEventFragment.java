@@ -164,10 +164,10 @@ public class ReportEventFragment extends Fragment {
             @Override
             public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
                 if (databaseError != null) {
-                    Toast toast = Toast.makeText(getContext(), "The event is failed, please check you network status.", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getContext(), "The event is failed, please check your network status.", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    Toast toast = Toast.makeText(getContext(), "The event is reported", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getContext(), "The event is posted", Toast.LENGTH_SHORT);
                     toast.show();
                     mTextViewLocation.setText("");
                     getmTextViewDest.setText("");
